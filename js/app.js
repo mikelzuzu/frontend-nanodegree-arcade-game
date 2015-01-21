@@ -70,18 +70,6 @@ Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 
     // Draw score
-/*    ctx.fillStyle = 'black';
-    ctx.font = "36px Arial";
-    ctx.textAlign = "left";
-    ctx.fillText("HI-SCORE: " + player.score, 0, 40);
-    ctx.textAlign = "right";
-    ctx.fillText("Lifes: " + player.lifes, 505, 40);
-
-    ctx.fillStyle = "blue";
-    ctx.font = "24px Helvetica";
-    ctx.textAlign = "left";
-    ctx.textBaseline = "top";
-    ctx.fillText("Monsterrs caught: " + this.lifes, 32, 32);*/
     updateScore(this);
 }
 
@@ -142,11 +130,6 @@ Player.prototype.handleInput = function(key) {
     default:
     }
 
-    /** if ((this.x + dt * this.speed) < 505) {
-        this.x = this.x + dt * this.speed;
-    } else {
-        this.x = -101;
-    } **/
 }
 
 /**
